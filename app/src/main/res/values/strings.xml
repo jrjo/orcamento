@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name" translatable="false">Orçamento</string>
+    <string name="orcamento">Orcamento</string>
+</resources>
