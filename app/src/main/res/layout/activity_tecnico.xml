@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CA1BB"
+    tools:context=".tecnico">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="175dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:text="Orçamento"
+        android:textAlignment="center"
+        android:textColor="#77100C0C"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Peças"
+        android:layout_width="79dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="32dp"
+        android:text="Tecnico"
+        android:textAlignment="center"
+        android:textColor="#100C0C"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiltecnico"
+        android:layout_width="261dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="68dp"
+        android:background="#4CA1BB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Peças">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nometecnico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4CA1BB"
+            android:hint="Nome :"
+            android:imeOptions="actionNext"
+            android:inputType="textImeMultiLine"
+            android:lines="1"
+            android:maxLength="50"
+            android:textAlignment="inherit"
+            android:textColor="#100C0C"
+            android:textStyle="bold" />
+
+        <requestFocus />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/funcaotecnico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4CA1BB"
+                android:hint=" Função :"
+                android:imeOptions="actionNext"
+                android:inputType="textImeMultiLine"
+                android:lines="1"
+                android:textAlignment="inherit"
+                android:textColor="#100C0C"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btngravartecnico"
+        android:layout_width="149dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/bordaarredondadabotton"
+        android:text="Gravar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tiltecnico"
+        app:layout_constraintVertical_bias="0.236" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

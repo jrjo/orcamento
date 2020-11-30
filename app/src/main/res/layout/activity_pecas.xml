@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CA1BB"
+    tools:context=".pecas">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="175dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:text="Orçamento"
+        android:textAlignment="center"
+        android:textColor="#77100C0C"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Peças"
+        android:layout_width="79dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="32dp"
+        android:text="Peças"
+        android:textAlignment="center"
+        android:textColor="#100C0C"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="322dp"
+        android:layout_height="468dp"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="189dp">
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
